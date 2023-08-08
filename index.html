@@ -140,7 +140,6 @@
             </div>
           </div>
         </div>
-
         <button
           class="carousel-control-prev"
           type="button"
@@ -162,209 +161,173 @@
       </div>
     </div>
 
-    <div class="container mt-4 pb-5">
-      <h4 class="text-white my-4">Recent Movies</h4>
-      <!-- Card -->
-      <div
-        id="paginated-list"
-        data-current-page="1"
-        class="row"
-        aria-live="polite"
-      >
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/interstellar-poster.jpeg"
-            movieTitle="Interstellar"
-            year="2016"
-            targetLink="movie.html"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/autopsy-poster.jpg"
-            movieTitle="The Autopsy of Jane Doe"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/aquietplace-poster.jpg"
-            movieTitle="A Quiet Place 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/conjuring-poster.jpg"
-            movieTitle="The Conjuring"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/Conjuring2-poster.jpg"
-            movieTitle="The Conjuring 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/hereditary-poster.jpg"
-            movieTitle="Hereditary"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/hungegames-poster.jpg"
-            movieTitle="Hunger Games"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/inceptio-poster.jpg"
-            movieTitle="Inception"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/insidious-posterr.jpg"
-            movieTitle="Insidious"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/insidioustrd-poster.jpg"
-            movieTitle="Insidious: The Red Door"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/it-poster.jpg"
-            movieTitle="It"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/mazerunner-poster.jpg"
-            movieTitle="Maze Runner"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/interstellar-poster.jpeg"
-            movieTitle="Interstellar"
-            year="2016"
-            targetLink="movie.html"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/autopsy-poster.jpg"
-            movieTitle="The Autopsy of Jane Doe"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/aquietplace-poster.jpg"
-            movieTitle="A Quiet Place 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/Conjuring2-poster.jpg"
-            movieTitle="The Conjuring 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/conjuring-poster.jpg"
-            movieTitle="The Conjuring"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/hereditary-poster.jpg"
-            movieTitle="Hereditary"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/interstellar-poster.jpeg"
-            movieTitle="Interstellar"
-            year="2016"
-            targetLink="movie.html"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/autopsy-poster.jpg"
-            movieTitle="The Autopsy of Jane Doe"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/aquietplace-poster.jpg"
-            movieTitle="A Quiet Place 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/conjuring-poster.jpg"
-            movieTitle="The Conjuring"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/Conjuring2-poster.jpg"
-            movieTitle="The Conjuring 2"
-            year="2016"
-          ></movie-card>
-        </a>
-        <a class="col-xl-2">
-          <movie-card
-            poster="src/hereditary-poster.jpg"
-            movieTitle="Hereditary"
-            year="2016"
-          ></movie-card>
-        </a>
+    <div
+      id="myCarousel"
+      class="carousel slide container position-relative"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner w-100">
+        <div id="carousel-item" class="carousel-item active">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
+        <div id="carousel-item" class="carousel-item">
+          <a class="col-xl-2">
+            <movie-card
+              poster="src/interstellar-poster.jpeg"
+              movieTitle="Interstellar"
+              year="2016"
+              targetLink="movie.html"
+            ></movie-card>
+          </a>
+        </div>
       </div>
+      <button
+        class="carousel-control-prev prev-button"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next next-button"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <nav class="pagination-container">
-      <button
-        class="pagination-button"
-        id="prev-button"
-        aria-label="Previous page"
-        title="Previous page"
-      >
-        &lt;
-      </button>
 
-      <div id="pagination-numbers"></div>
-
-      <button
-        class="pagination-button"
-        id="next-button"
-        aria-label="Next page"
-        title="Next page"
-      >
-        &gt;
-      </button>
-    </nav>
     <footer
       class="d-flex flex-column container mt-5 mb-3 pt-4 border-top border-white border-opacity-50"
     >
@@ -394,6 +357,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="multiCarousel.js"></script>
     <script src="pagination.js"></script>
     <script src="movieCard.js"></script>
     <script src="navBar.js"></script>
