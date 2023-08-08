@@ -237,7 +237,10 @@ input.transparent-input {
   color: #fff;
   background: #0085b6;
 }
-.responsive a {
-  padding-left: 1vh;
-  padding-right: 1vh;
+
+.swiper-button-next {
+  right: 10%;
+}
+.swiper-button-prev {
+  left: 10%;
 }
