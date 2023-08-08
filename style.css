@@ -237,3 +237,58 @@ input.transparent-input {
   color: #fff;
   background: #0085b6;
 }
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > a {
+    display: none;
+    margin-inline: auto;
+  }
+  .carousel-inner .carousel-item > a:first-child {
+    display: block;
+  }
+}
+.carousel-item a {
+  padding-inline: 1%;
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  // transition-duration: 10s;
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+  .prev-button {
+    position: absolute;
+    left: -15%;
+  }
+  .next-button {
+    position: absolute;
+    right: -15%;
+  }
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(16.6667%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-16.6667%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-16.6667%) !important;
+  }
+}
