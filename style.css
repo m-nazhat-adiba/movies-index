@@ -240,7 +240,11 @@ input.transparent-input {
 
 .swiper-button-next {
   right: 10%;
+  color: white !important;
+  opacity: 50%;
 }
 .swiper-button-prev {
   left: 10%;
+  color: white !important;
+  opacity: 50%;
 }
