@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 10,
   centeredSlides: false,
@@ -28,8 +28,8 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#swiper-button-next-1",
+    prevEl: "#swiper-button-prev-1",
   },
   pagination: {
     el: ".swiper-pagination",
