@@ -22,124 +22,116 @@
   </head>
 
   <body class="bg-black">
-    <!-- Header -->
+    <!-- Navbar -->
+    <nav-bar></nav-bar>
+    <!-- Carousel -->
+    <!-- Item 1 -->
     <div
-      class="container-fluid w-100 mx-0 px-0"
-      style="overflow: clip; height: 90vh"
+      id="carouselExampleAutoplaying"
+      class="carousel slide position-relative mx-0 px-0"
+      style="width: 100%; top: -120px"
+      data-bs-ride="carousel"
     >
-      <!-- Navbar -->
-      <nav-bar></nav-bar>
-      <!-- Carousel -->
-      <!-- Item 1 -->
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide position-absolute top-0 mx-0 px-0"
-        style="width: 100%"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div
-              class="d-flex align-items-center justify-content-center w-100"
-              style="
-                min-height: 90vh;
-                background-image: url(src/interstellar_banner.jpg);
-                background-size: cover;
-                background-position: 0px 50%;
-              "
-            ></div>
-            <div
-              class="h-100 w-100 bg-black bg-opacity-50 vignette position-absolute top-0"
-            >
-              <div class="container h-100 w-100">
-                <div class="text-white position-absolute" style="bottom: 10%">
-                  <h1 class="my-0 fs-1 w-50">Interstellar</h1>
-                  <div style="width: fit-content">
-                    <div class="star-ratings-css" title="5"></div>
-                  </div>
-                  <h5 class="mt-4 fs-5">Overview</h5>
-                  <p class="w-50 fs-6">
-                    In Earth's future, a global crop blight and second Dust Bowl
-                    are slowly rendering the planet uninhabitable. Professor
-                    Brand (Michael Caine), a brilliant NASA physicist, is
-                    working on plans to save mankind by transporting Earth's
-                    population to a new home via a wormhole. But first, Brand
-                    must send former NASA pilot Cooper (Matthew McConaughey) and
-                    a team of researchers through the wormhole and across the
-                    galaxy to find out which of three planets could be mankind's
-                    new home.
-                  </p>
+      <div class="carousel-inner" style="overflow: clip; height: 90vh">
+        <div class="carousel-item active">
+          <div
+            class="d-flex align-items-center justify-content-center w-100"
+            style="
+              min-height: 90vh;
+              background-image: url(src/interstellar_banner.jpg);
+              background-size: cover;
+              background-position: 0px 50%;
+            "
+          ></div>
+          <div
+            class="h-100 w-100 bg-black bg-opacity-50 vignette position-absolute"
+          >
+            <div class="container px-0 h-100 w-100">
+              <div class="text-white position-absolute" style="bottom: 15%">
+                <h1 class="my-0" style="width: 30%">Interstellar</h1>
+                <div style="width: fit-content">
+                  <div class="star-ratings-css" title="5"></div>
                 </div>
+                <h5 class="mt-5 fs-5">Overview</h5>
+                <p class="w-50 fs-6">
+                  In Earth's future, a global crop blight and second Dust Bowl
+                  are slowly rendering the planet uninhabitable. Professor Brand
+                  (Michael Caine), a brilliant NASA physicist, is working on
+                  plans to save mankind by transporting Earth's population to a
+                  new home via a wormhole. But first, Brand must send former
+                  NASA pilot Cooper (Matthew McConaughey) and a team of
+                  researchers through the wormhole and across the galaxy to find
+                  out which of three planets could be mankind's new home.
+                </p>
               </div>
             </div>
           </div>
-          <!-- Item 2 -->
-          <div class="carousel-item">
-            <div
-              class="d-flex align-items-center justify-content-center w-100"
-              style="
-                min-height: 90vh;
-                background-image: url(src/harry-potter-hbp.png);
-                background-size: cover;
-                background-position: 0px 50%;
-              "
-            ></div>
-            <div
-              class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute top-0"
-            >
-              <div class="container h-100 w-100">
-                <div class="text-white position-absolute" style="bottom: 10%">
-                  <h1 class="my-0 fs-1 w-50">
-                    Harry Potter and The Half Blood Prince
-                  </h1>
-                  <div style="width: fit-content">
-                    <div class="star-ratings-css" title="5"></div>
-                  </div>
-                  <h5 class="mt-4 fs-5">Overview</h5>
-                  <p class="w-50 fs-6">
-                    As Death Eaters wreak havoc in both Muggle and Wizard
-                    worlds, Hogwarts is no longer a safe haven for students.
-                    Though Harry (Daniel Radcliffe) suspects there are new
-                    dangers lurking within the castle walls, Dumbledore is more
-                    intent than ever on preparing the young wizard for the final
-                    battle with Voldemort. Meanwhile, teenage hormones run
-                    rampant through Hogwarts, presenting a different sort of
-                    danger. Love may be in the air, but tragedy looms, and
-                    Hogwarts may never be the same again.
-                  </p>
+        </div>
+        <!-- Item 2 -->
+        <div class="carousel-item">
+          <div
+            class="d-flex align-items-center justify-content-center w-100"
+            style="
+              min-height: 90vh;
+              background-image: url(src/harry-potter-hbp.png);
+              background-size: cover;
+              background-position: 0px 50%;
+            "
+          ></div>
+          <div
+            class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute"
+          >
+            <div class="container px-0 h-100 w-100">
+              <div class="text-white position-absolute" style="bottom: 15%">
+                <h1 class="my-0" style="width: 30%">
+                  Harry Potter and The Half Blood Prince
+                </h1>
+                <div style="width: fit-content">
+                  <div class="star-ratings-css" title="5"></div>
                 </div>
+                <h5 class="mt-5 fs-5">Overview</h5>
+                <p class="w-50 fs-6">
+                  As Death Eaters wreak havoc in both Muggle and Wizard worlds,
+                  Hogwarts is no longer a safe haven for students. Though Harry
+                  (Daniel Radcliffe) suspects there are new dangers lurking
+                  within the castle walls, Dumbledore is more intent than ever
+                  on preparing the young wizard for the final battle with
+                  Voldemort. Meanwhile, teenage hormones run rampant through
+                  Hogwarts, presenting a different sort of danger. Love may be
+                  in the air, but tragedy looms, and Hogwarts may never be the
+                  same again.
+                </p>
               </div>
             </div>
           </div>
-          <!-- Item 3 -->
-          <div class="carousel-item">
-            <div
-              class="d-flex align-items-center justify-content-center w-100"
-              style="
-                min-height: 90vh;
-                background-image: url(src/midsommar.jpg);
-                background-size: cover;
-                background-position: 0px 50%;
-              "
-            ></div>
-            <div
-              class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute top-0"
-            >
-              <div class="container h-100 w-100">
-                <div class="text-white position-absolute" style="bottom: 10%">
-                  <h1 class="my-0 fs-1 w-50">Midsommar</h1>
-                  <div style="width: fit-content">
-                    <div class="star-ratings-css" title="5"></div>
-                  </div>
-                  <h5 class="mt-4 fs-5">Overview</h5>
-                  <p class="w-50 fs-6">
-                    A young American couple, their relationship foundering,
-                    travel to a fabled Swedish midsummer festival where a
-                    seemingly pastoral paradise transforms into a sinister,
-                    dread-soaked nightmare as the locals reveal their terrifying
-                    agenda.
-                  </p>
+        </div>
+        <!-- Item 3 -->
+        <div class="carousel-item">
+          <div
+            class="d-flex align-items-center justify-content-center w-100"
+            style="
+              min-height: 90vh;
+              background-image: url(src/midsommar.jpg);
+              background-size: cover;
+              background-position: 0px 50%;
+            "
+          ></div>
+          <div
+            class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute"
+          >
+            <div class="container px-0 h-100 w-100">
+              <div class="text-white position-absolute" style="bottom: 15%">
+                <h1 class="my-0" style="width: 30%">Midsommar</h1>
+                <div style="width: fit-content">
+                  <div class="star-ratings-css" title="5"></div>
                 </div>
+                <h5 class="mt-5 fs-5">Overview</h5>
+                <p class="w-50 fs-6">
+                  A young American couple, their relationship foundering, travel
+                  to a fabled Swedish midsummer festival where a seemingly
+                  pastoral paradise transforms into a sinister, dread-soaked
+                  nightmare as the locals reveal their terrifying agenda.
+                </p>
               </div>
             </div>
           </div>
@@ -164,391 +156,438 @@
         </button>
       </div>
     </div>
-    <div class="container px-0 mt-5 d-flex flex-row justify-content-between">
-      <h3 class="text-white">New Arrival</h3>
-      <button
-        type="button"
-        class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
-        style="background: none"
+
+    <div class="position-relative" style="top: -100px">
+      <div class="container px-0 d-flex flex-row justify-content-between">
+        <h3 class="text-white">New Arrival</h3>
+        <button
+          type="button"
+          class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
+          style="background: none"
+        >
+          See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
+        </button>
+      </div>
+      <div class="position-relative w-100 py-4">
+        <div class="swiper mySwiper container w-100">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hungegames-poster.jpg"
+                movieTitle="Hunger Games"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/inceptio-poster.jpg"
+                movieTitle="Inception"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/insidious-posterr.jpg"
+                movieTitle="Insidious"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/insidioustrd-poster.jpg"
+                movieTitle="Insidious: The Red Door"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/it-poster.jpg"
+                movieTitle="It"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/mazerunner-poster.jpg"
+                movieTitle="Maze Runner"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+          </div>
+        </div>
+        <div id="swiper-button-next-1" class="swiper-button-next"></div>
+        <div id="swiper-button-prev-1" class="swiper-button-prev"></div>
+      </div>
+
+      <div
+        class="container px-0 pt-4 mt-5 d-flex flex-row justify-content-between"
       >
-        See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
-      </button>
-    </div>
-    <div class="position-relative w-100 py-3">
-      <div class="swiper mySwiper container w-100">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
+        <h3 class="text-white">Featured Movies</h3>
+        <button
+          type="button"
+          class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
+          style="background: none"
+        >
+          See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
+        </button>
+      </div>
+
+      <div class="position-relative w-100 py-4">
+        <div class="swiper mySwiper2 container w-100">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hungegames-poster.jpg"
+                movieTitle="Hunger Games"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/inceptio-poster.jpg"
+                movieTitle="Inception"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/insidious-posterr.jpg"
+                movieTitle="Insidious"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/insidioustrd-poster.jpg"
+                movieTitle="Insidious: The Red Door"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/it-poster.jpg"
+                movieTitle="It"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/mazerunner-poster.jpg"
+                movieTitle="Maze Runner"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/interstellar-poster.jpeg"
+                movieTitle="Interstellar"
+                year="2016"
+                targetLink="movie.html"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/autopsy-poster.jpg"
+                movieTitle="The Autopsy of Jane Doe"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/aquietplace-poster.jpg"
+                movieTitle="A Quiet Place 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/conjuring-poster.jpg"
+                movieTitle="The Conjuring"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/Conjuring2-poster.jpg"
+                movieTitle="The Conjuring 2"
+                year="2016"
+              ></movie-card>
+            </a>
+            <a class="swiper-slide col-xl-2">
+              <movie-card
+                poster="src/hereditary-poster.jpg"
+                movieTitle="Hereditary"
+                year="2016"
+              ></movie-card>
+            </a>
+          </div>
+        </div>
+        <div id="swiper-button-next-2" class="swiper-button-next"></div>
+        <div id="swiper-button-prev-2" class="swiper-button-prev"></div>
+      </div>
+
+      <div
+        class="container px-0 pt-4 mt-5 d-flex flex-row justify-content-between"
+      >
+        <h3 class="text-white">
+          Coming Soon
+          <p class="fs-6 fw-light pt-1">Trailers for upcoming releases</p>
+        </h3>
+        <button
+          type="button"
+          class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
+          style="background: none"
+        >
+          See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
+        </button>
+      </div>
+      <div class="container px-0">
+        <div class="row">
+          <div class="col-xl-4">
+            <video-card
+              thumbnail="https://i.ytimg.com/vi/zSWdZVtXT7E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW9ec-FT_xRIAgRjaBHLnCsIJ5FQ"
+              len="2:26"
               movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hungegames-poster.jpg"
-              movieTitle="Hunger Games"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/inceptio-poster.jpg"
-              movieTitle="Inception"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/insidious-posterr.jpg"
-              movieTitle="Insidious"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/insidioustrd-poster.jpg"
-              movieTitle="Insidious: The Red Door"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/it-poster.jpg"
-              movieTitle="It"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/mazerunner-poster.jpg"
-              movieTitle="Maze Runner"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
+              date="AUG 16"
+            ></video-card>
+          </div>
+          <div class="col-xl-4">
+            <video-card
+              thumbnail="https://i.ytimg.com/vi/zSWdZVtXT7E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW9ec-FT_xRIAgRjaBHLnCsIJ5FQ"
+              len="2:26"
               movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
+              date="AUG 16"
+            ></video-card>
+          </div>
+          <div class="col-xl-4">
+            <video-card
+              thumbnail="https://i.ytimg.com/vi/zSWdZVtXT7E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW9ec-FT_xRIAgRjaBHLnCsIJ5FQ"
+              len="2:26"
               movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
+              date="AUG 16"
+            ></video-card>
+          </div>
         </div>
       </div>
-      <div id="swiper-button-next-1" class="swiper-button-next"></div>
-      <div id="swiper-button-prev-1" class="swiper-button-prev"></div>
-    </div>
-
-    <div
-      class="container px-0 pt-5 mt-5 d-flex flex-row justify-content-between"
-    >
-      <h3 class="text-white">Featured Movies</h3>
-      <button
-        type="button"
-        class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
-        style="background: none"
-      >
-        See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
-      </button>
-    </div>
-
-    <div class="position-relative w-100 py-3">
-      <div class="swiper mySwiper2 container w-100">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
-              movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hungegames-poster.jpg"
-              movieTitle="Hunger Games"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/inceptio-poster.jpg"
-              movieTitle="Inception"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/insidious-posterr.jpg"
-              movieTitle="Insidious"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/insidioustrd-poster.jpg"
-              movieTitle="Insidious: The Red Door"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/it-poster.jpg"
-              movieTitle="It"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/mazerunner-poster.jpg"
-              movieTitle="Maze Runner"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
-              movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/interstellar-poster.jpeg"
-              movieTitle="Interstellar"
-              year="2016"
-              targetLink="movie.html"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/autopsy-poster.jpg"
-              movieTitle="The Autopsy of Jane Doe"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/aquietplace-poster.jpg"
-              movieTitle="A Quiet Place 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/conjuring-poster.jpg"
-              movieTitle="The Conjuring"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/Conjuring2-poster.jpg"
-              movieTitle="The Conjuring 2"
-              year="2016"
-            ></movie-card>
-          </a>
-          <a class="swiper-slide col-xl-2">
-            <movie-card
-              poster="src/hereditary-poster.jpg"
-              movieTitle="Hereditary"
-              year="2016"
-            ></movie-card>
-          </a>
-        </div>
-      </div>
-      <div id="swiper-button-next-2" class="swiper-button-next"></div>
-      <div id="swiper-button-prev-2" class="swiper-button-prev"></div>
     </div>
 
     <footer
-      class="d-flex flex-column container mt-5 mb-3 pt-4 border-top border-white border-opacity-50"
+      class="d-flex flex-column container mt-5 mb-3 pt-4 px-0 border-top border-white border-opacity-50"
     >
       <div class="d-flex flex-column align-items-start gap-3">
         <div class="d-flex align-items-center">
@@ -559,7 +598,7 @@
             height="50"
             class="d-inline-block align-text-top"
           />
-          <a class="navbar-brand text-white fs-3" href="#"> Moviever</a>
+          <a class="navbar-brand text-white fs-3" href="#">Moviever</a>
         </div>
         <ul class="text-white px-0" style="list-style: none">
           <li>Account</li>
@@ -576,9 +615,9 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="multiCarousel.js"></script> -->
     <script src="movieCard.js"></script>
     <script src="navBar.js"></script>
+    <script src="videoCard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="swiperCarousel.js"></script>
     <script src="swiperCarousel2.js"></script>
