@@ -1,5 +1,5 @@
 var swiper3 = new Swiper(".videoSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 10,
   centeredSlides: false,
   //   slidesPerGroupSkip: 1,
@@ -19,9 +19,9 @@ var swiper3 = new Swiper(".videoSwiper", {
       slidesPerGroup: 4,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 12,
-      slidesPerGroup: 4,
+      slidesPerGroup: 3,
     },
   },
   scrollbar: {
