@@ -200,7 +200,7 @@ input.transparent-input {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 -200px 1000px rgba(0, 0, 0, 0.9) inset;
+  box-shadow: 0 0 2000px 180px rgba(0, 0, 0, 1) inset;
 }
 .ms-n5 {
   margin-left: -40px;
@@ -239,12 +239,10 @@ input.transparent-input {
 }
 
 .swiper-button-next {
-  right: 10%;
   color: white !important;
   opacity: 50%;
 }
 .swiper-button-prev {
-  left: 10%;
   color: white !important;
   opacity: 50%;
 }
