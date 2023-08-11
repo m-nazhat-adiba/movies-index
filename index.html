@@ -639,10 +639,7 @@
         Explore More
       </p>
 
-      <div
-        class="container px-0 d-flex flex-row justify-content-between"
-        style=""
-      >
+      <div class="container px-0 d-flex flex-row justify-content-between">
         <h4 class="text-white px-2" style="border-left: 2px solid deepskyblue">
           Popular Cast
         </h4>
@@ -732,8 +729,14 @@
             </div>
           </div>
         </div>
-        <div id="swiper-button-next-4" class="swiper-button-next"></div>
-        <div id="swiper-button-prev-4" class="swiper-button-prev"></div>
+        <div
+          id="swiper-button-next-4"
+          class="swiper-button-next swiper-button-next-override"
+        ></div>
+        <div
+          id="swiper-button-prev-4"
+          class="swiper-button-prev swiper-button-prev-override"
+        ></div>
       </div>
 
       <div
@@ -821,139 +824,120 @@
             </div>
           </div>
         </div>
-        <div id="swiper-button-next-3" class="swiper-button-next"></div>
-        <div id="swiper-button-prev-3" class="swiper-button-prev"></div>
+        <div
+          id="swiper-button-next-3"
+          class="swiper-button-next swiper-button-next-override"
+        ></div>
+        <div
+          id="swiper-button-prev-3"
+          class="swiper-button-prev swiper-button-prev-override"
+        ></div>
       </div>
     </div>
 
-    <div
-      id="movieCarousel-2"
-      class="carousel slide position-relative mx-0 my-5 py-5 px-0"
-      style="width: 100%"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner" style="overflow: clip; height: 80vh">
-        <div class="carousel-item active">
-          <div
-            class="d-flex align-items-center justify-content-center w-100"
-            style="
-              min-height: 80vh;
-              background-image: url(src/interstellar_banner.jpg);
-              background-size: cover;
-              background-position: 0px 50%;
-            "
-          ></div>
-          <div
-            class="h-100 w-100 bg-black bg-opacity-50 vignette position-absolute"
-          >
-            <div class="container px-0 h-100 w-100">
-              <div class="text-white position-absolute" style="bottom: 15%">
-                <h1 class="my-0" style="width: 30%">Interstellar</h1>
-                <div style="width: fit-content">
-                  <div class="star-ratings-css" title="5"></div>
-                </div>
-                <h5 class="mt-5 fs-5">Overview</h5>
-                <p class="w-50 fs-6">
-                  In Earth's future, a global crop blight and second Dust Bowl
-                  are slowly rendering the planet uninhabitable. Professor Brand
-                  (Michael Caine), a brilliant NASA physicist, is working on
-                  plans to save mankind by transporting Earth's population to a
-                  new home via a wormhole. But first, Brand must send former
-                  NASA pilot Cooper (Matthew McConaughey) and a team of
-                  researchers through the wormhole and across the galaxy to find
-                  out which of three planets could be mankind's new home.
-                </p>
-              </div>
-            </div>
+    <div class="container px-0">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="d-flex flex-column">
+            <h4
+              class="text-white px-2"
+              style="border-left: 2px solid deepskyblue"
+            >
+              News
+            </h4>
+
+            <ol class="px-0">
+              <li
+                style="height: 100px; width: 100%; list-style-position: inside"
+              >
+                <rank-card
+                  movieTitle="Lorem ipsum dolor sit amet"
+                  thumbnail="src/hereditary-poster.jpg"
+                ></rank-card>
+              </li>
+              <li
+                style="height: 100px; width: 100%; list-style-position: inside"
+              >
+                <rank-card
+                  movieTitle="Hereditary"
+                  thumbnail="src/hereditary-poster.jpg"
+                ></rank-card>
+              </li>
+              <li
+                style="height: 100px; width: 100%; list-style-position: inside"
+              >
+                <rank-card
+                  movieTitle="Hereditary"
+                  thumbnail="src/hereditary-poster.jpg"
+                ></rank-card>
+              </li>
+              <li
+                style="height: 100px; width: 100%; list-style-position: inside"
+              >
+                <rank-card
+                  movieTitle="Hereditary"
+                  thumbnail="src/hereditary-poster.jpg"
+                ></rank-card>
+              </li>
+            </ol>
           </div>
         </div>
-        <!-- Item 2 -->
-        <div class="carousel-item">
+        <div class="col-xl-8">
           <div
-            class="d-flex align-items-center justify-content-center w-100"
-            style="
-              min-height: 80vh;
-              background-image: url(src/harry-potter-hbp.png);
-              background-size: cover;
-              background-position: 0px 50%;
-            "
-          ></div>
-          <div
-            class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute"
+            class="container px-0 pb-4 d-flex flex-row justify-content-between"
           >
-            <div class="container px-0 h-100 w-100">
-              <div class="text-white position-absolute" style="bottom: 15%">
-                <h1 class="my-0" style="width: 30%">
-                  Harry Potter and The Half Blood Prince
-                </h1>
-                <div style="width: fit-content">
-                  <div class="star-ratings-css" title="5"></div>
-                </div>
-                <h5 class="mt-5 fs-5">Overview</h5>
-                <p class="w-50 fs-6">
-                  As Death Eaters wreak havoc in both Muggle and Wizard worlds,
-                  Hogwarts is no longer a safe haven for students. Though Harry
-                  (Daniel Radcliffe) suspects there are new dangers lurking
-                  within the castle walls, Dumbledore is more intent than ever
-                  on preparing the young wizard for the final battle with
-                  Voldemort. Meanwhile, teenage hormones run rampant through
-                  Hogwarts, presenting a different sort of danger. Love may be
-                  in the air, but tragedy looms, and Hogwarts may never be the
-                  same again.
-                </p>
-              </div>
-            </div>
+            <h4
+              class="text-white px-2"
+              style="border-left: 2px solid deepskyblue"
+            >
+              Top News
+            </h4>
           </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="carousel-item">
-          <div
-            class="d-flex align-items-center justify-content-center w-100"
-            style="
-              min-height: 80vh;
-              background-image: url(src/midsommar.jpg);
-              background-size: cover;
-              background-position: 0px 50%;
-            "
-          ></div>
-          <div
-            class="h-100 w-100 bg-opacity-50 bg-black vignette position-absolute"
-          >
-            <div class="container px-0 h-100 w-100">
-              <div class="text-white position-absolute" style="bottom: 15%">
-                <h1 class="my-0" style="width: 30%">Midsommar</h1>
-                <div style="width: fit-content">
-                  <div class="star-ratings-css" title="5"></div>
-                </div>
-                <h5 class="mt-5 fs-5">Overview</h5>
-                <p class="w-50 fs-6">
+          <div class="swiper newsSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <h3 class="text-white pt-4 pb-1">
+                  2023 Emmy Awards Officially Move to January 2024
+                </h3>
+                <p class="text-white">
                   A young American couple, their relationship foundering, travel
                   to a fabled Swedish midsummer festival where a seemingly
                   pastoral paradise transforms into a sinister, dread-soaked
-                  nightmare as the locals reveal their terrifying agenda.
+                  nightmare as the locals reveal their terrifying agenda
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <h3 class="text-white pt-4 pb-1">
+                  2023 Emmy Awards Officially Move to January 2024
+                </h3>
+                <p class="text-white">
+                  A young American couple, their relationship foundering, travel
+                  to a fabled Swedish midsummer festival where a seemingly
+                  pastoral paradise transforms into a sinister, dread-soaked
+                  nightmare as the locals reveal their terrifying agenda
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <h3 class="text-white pt-4 pb-1">
+                  2023 Emmy Awards Officially Move to January 2024
+                </h3>
+                <p class="text-white">
+                  A young American couple, their relationship foundering, travel
+                  to a fabled Swedish midsummer festival where a seemingly
+                  pastoral paradise transforms into a sinister, dread-soaked
+                  nightmare as the locals reveal their terrifying agenda
                 </p>
               </div>
             </div>
+            <div
+              style="position: static !important"
+              class="swiper-pagination"
+            ></div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#movieCarousel-2"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#movieCarousel-2"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
@@ -996,5 +980,6 @@
     <script src="swiperCarousel2.js"></script>
     <script src="comingSoonCarousel.js"></script>
     <script src="castSwiper.js"></script>
+    <script src="newsCarousel.js"></script>
   </body>
 </html>
