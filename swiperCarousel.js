@@ -19,9 +19,9 @@ var swiper1 = new Swiper(".mySwiper", {
       slidesPerGroup: 4,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       spaceBetween: 28,
-      slidesPerGroup: 6,
+      slidesPerGroup: 4,
     },
   },
   scrollbar: {
