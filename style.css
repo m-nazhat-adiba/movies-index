@@ -246,3 +246,13 @@ input.transparent-input {
   color: white !important;
   opacity: 50%;
 }
+.swiper-button-next-override {
+  color: white !important;
+  right: 10%;
+  opacity: 50%;
+}
+.swiper-button-prev-override {
+  color: white !important;
+  left: 10%;
+  opacity: 50%;
+}
