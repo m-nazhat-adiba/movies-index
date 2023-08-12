@@ -20,7 +20,7 @@ template.innerHTML = `
   <p class="card-text fs-6"></p>
 </div>
 <a class="card-img-overlay" href="#"></a>
-<button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#notificationModal">
+<button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#notificationModal" style="color: grey">
 <i class="position-absolute bi bi-bookmark-plus-fill" style="font-size: 32px; left: -2px; top: -10px"></i>
 </button>
 </div>`;

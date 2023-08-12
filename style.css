@@ -194,14 +194,6 @@ input.transparent-input {
     rgba(0, 212, 255, 0) 80%
   );
 }
-.vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 2000px 180px rgba(0, 0, 0, 1) inset;
-}
 .ms-n5 {
   margin-left: -40px;
 }
@@ -257,8 +249,11 @@ input.transparent-input {
   opacity: 50%;
 }
 .myAlert-top {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   top: 2%;
   z-index: 999999;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
 }

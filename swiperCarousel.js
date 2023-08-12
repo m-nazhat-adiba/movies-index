@@ -1,5 +1,5 @@
 var swiper1 = new Swiper(".mySwiper", {
-  slidesPerView: 6,
+  slidesPerView: 2,
   spaceBetween: 10,
   centeredSlides: false,
   //   slidesPerGroupSkip: 1,
@@ -14,11 +14,16 @@ var swiper1 = new Swiper(".mySwiper", {
       slidesPerGroup: 2,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-      slidesPerGroup: 4,
+      slidesPerView: 3,
+      spaceBetween: 28,
+      slidesPerGroup: 3,
     },
     1024: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+      slidesPerGroup: 3,
+    },
+    1440: {
       slidesPerView: 4,
       spaceBetween: 28,
       slidesPerGroup: 4,
