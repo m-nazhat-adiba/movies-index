@@ -256,3 +256,9 @@ input.transparent-input {
   left: 10%;
   opacity: 50%;
 }
+.myAlert-top {
+  position: fixed;
+  width: 100%;
+  top: 2%;
+  z-index: 999999;
+}

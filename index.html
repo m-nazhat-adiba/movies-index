@@ -22,6 +22,16 @@
   </head>
 
   <body class="bg-black">
+    <!-- Alert -->
+    <div class="d-flex justify-content-center">
+      <div
+        class="container alert alert-success d-none myAlert-top"
+        id="tempAlert"
+        role="alert"
+      >
+        Succesfully added to you <strong>Watchlist!</strong>
+      </div>
+    </div>
     <!-- Navbar -->
     <nav-bar></nav-bar>
     <!-- Carousel -->
@@ -71,8 +81,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-light"
-                    data-bs-toggle="modal"
-                    data-bs-target="#darkNotificationModal"
+                    id="showAlertButton1"
                   >
                     <i class="bi bi-bookmark pe-1"></i>Add Watchlist
                   </button>
@@ -123,8 +132,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-light"
-                    data-bs-toggle="modal"
-                    data-bs-target="#darkNotificationModal"
+                    id="showAlertButton2"
                   >
                     <i class="bi bi-bookmark pe-1"></i>Add Watchlist
                   </button>
@@ -168,8 +176,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-light"
-                    data-bs-toggle="modal"
-                    data-bs-target="#darkNotificationModal"
+                    id="showAlertButton3"
                   >
                     <i class="bi bi-bookmark pe-1"></i>Add Watchlist
                   </button>
@@ -1012,6 +1019,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="temporaryAlert.js"></script>
     <script src="hyperlink.js"></script>
     <script src="movieCard.js"></script>
     <script src="navBar.js"></script>
