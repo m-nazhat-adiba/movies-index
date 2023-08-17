@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media only screen and (min-width: 320px) {
+        .carouselText {
+          width: 100%;
+        }
+        .carousel-inner {
+          height: 100vh;
+        }
+        .carousel-sub {
+          min-height: 100vh;
+        }
+        .c-title {
+          width: 80%;
+        }
+        .vignette {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          box-shadow: 0 0 2000px 20px rgba(0, 0, 0, 1) inset;
+        }
+        .w-nav {
+          width: auto;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        .carouselText {
+          width: 50%;
+        }
+        .carousel-inner {
+          height: 75vh;
+        }
+        .carousel-sub {
+          min-height: 75vh;
+        }
+        .c-title {
+          width: 30%;
+        }
+        .vignette {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          box-shadow: 0 0 2000px 180px rgba(0, 0, 0, 1) inset;
+        }
+        .w-nav {
+          width: 100%;
+        }
+        .navbar-toggler-icon {
+          background-color: red !important; /* Change this to your desired color */
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <nav-bar></nav-bar>
+    <div class="container mt-4 pb-5">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">
+            New Arrival
+          </li>
+        </ol>
+      </nav>
+      <h2 class="my-4 pb-4" style="color: deepskyblue">New Arrival</h2>
+      <!-- Card -->
+      <div
+        id="paginated-list"
+        data-current-page="1"
+        class="row"
+        aria-live="polite"
+      >
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/interstellar-poster.jpeg"
+            movieTitle="Interstellar"
+            year="2016"
+            targetLink="movie.html"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/autopsy-poster.jpg"
+            movieTitle="The Autopsy of Jane Doe"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/aquietplace-poster.jpg"
+            movieTitle="A Quiet Place 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/conjuring-poster.jpg"
+            movieTitle="The Conjuring"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/Conjuring2-poster.jpg"
+            movieTitle="The Conjuring 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/hereditary-poster.jpg"
+            movieTitle="Hereditary"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/hungegames-poster.jpg"
+            movieTitle="Hunger Games"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/inceptio-poster.jpg"
+            movieTitle="Inception"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/insidious-posterr.jpg"
+            movieTitle="Insidious"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/insidioustrd-poster.jpg"
+            movieTitle="Insidious: The Red Door"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/it-poster.jpg"
+            movieTitle="It"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/mazerunner-poster.jpg"
+            movieTitle="Maze Runner"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/interstellar-poster.jpeg"
+            movieTitle="Interstellar"
+            year="2016"
+            targetLink="movie.html"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/autopsy-poster.jpg"
+            movieTitle="The Autopsy of Jane Doe"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/aquietplace-poster.jpg"
+            movieTitle="A Quiet Place 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/Conjuring2-poster.jpg"
+            movieTitle="The Conjuring 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/conjuring-poster.jpg"
+            movieTitle="The Conjuring"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/hereditary-poster.jpg"
+            movieTitle="Hereditary"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/interstellar-poster.jpeg"
+            movieTitle="Interstellar"
+            year="2016"
+            targetLink="movie.html"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/autopsy-poster.jpg"
+            movieTitle="The Autopsy of Jane Doe"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/aquietplace-poster.jpg"
+            movieTitle="A Quiet Place 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/conjuring-poster.jpg"
+            movieTitle="The Conjuring"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/Conjuring2-poster.jpg"
+            movieTitle="The Conjuring 2"
+            year="2016"
+          ></movie-card>
+        </a>
+        <a class="col-xl-2 col-md-3 pb-4">
+          <movie-card
+            poster="src/hereditary-poster.jpg"
+            movieTitle="Hereditary"
+            year="2016"
+          ></movie-card>
+        </a>
+      </div>
+    </div>
+    <nav class="pagination-container">
+      <button
+        class="pagination-button"
+        id="prev-button"
+        aria-label="Previous page"
+        title="Previous page"
+      >
+        &lt;
+      </button>
+
+      <div id="pagination-numbers"></div>
+
+      <button
+        class="pagination-button"
+        id="next-button"
+        aria-label="Next page"
+        title="Next page"
+      >
+        &gt;
+      </button>
+    </nav>
+    <footer
+      class="container mt-5 mb-5 pt-4 px-0 border-top border-white border-opacity-50"
+    >
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 class="text-white">
+            Our Platform is trusted by millions & features best updated movies
+            all around the world.
+          </h2>
+        </div>
+        <div class="col-xl-4"></div>
+        <div class="col-xl-4 d-flex flex-row justify-content-end">
+          <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center justify-content-end">
+              <img
+                src="src/logo.png"
+                alt="Logo"
+                width="30"
+                height="30"
+                class="d-inline-block align-text-top"
+              />
+              <a class="navbar-brand text-white fs-4" href="#">Moviever</a>
+            </div>
+            <div class="d-flex flex-row justify-content-end gap-4 fs-3">
+              <i class="bi bi-twitter iconDark"></i>
+              <i class="bi bi-instagram iconDark"></i>
+              <i class="bi bi-facebook iconDark"></i>
+              <i class="bi bi-reddit iconDark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="notificationModal"
+      tabindex="-1"
+      aria-labelledby="notificationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light px-2">
+          <div class="modal-header">
+            <h5 class="modal-title" id="notificationModalLabel">
+              Add to My List
+            </h5>
+          </div>
+          <div class="modal-body pt-4">
+            <div class="row">
+              <div class="col-xl-4">
+                <img src="src/interstellar-poster.jpeg" class="w-100" />
+              </div>
+              <div class="col-xl-8">
+                <div class="row">
+                  <div class="col-xl-3">
+                    <strong>Title:</strong>
+                  </div>
+                  <div class="col-xl-8">
+                    <p>Interstellar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class="col-xl-3 d-flex flex-column justify-content-center"
+                  >
+                    <strong>Status:</strong>
+                  </div>
+                  <div class="col-xl-8 center">
+                    <select
+                      class="form-select text-white d-flex w-100"
+                      id="inputGroupSelect01"
+                      style="background-color: transparent"
+                    >
+                      <option selected class="text-black">Plan to watch</option>
+                      <option value="1" class="text-black">Watched</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row pt-3">
+                  <div
+                    class="col-xl-3 d-flex flex-column justify-content-center"
+                  >
+                    <strong>Score:</strong>
+                  </div>
+                  <div class="col-xl-8">
+                    <select
+                      class="form-select text-white d-flex w-100"
+                      id="inputGroupSelect01"
+                      style="background-color: transparent"
+                    >
+                      <option selected class="text-black">None</option>
+                      <option value="1" class="text-black">Masterpiece</option>
+                      <option value="2" class="text-black">Very Good</option>
+                      <option value="3" class="text-black">Good</option>
+                      <option value="4" class="text-black">Bad</option>
+                      <option value="5" class="text-black">Appaling</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/pagination.js"></script>
+    <script src="components/MovieCard.js"></script>
+    <script src="components/NavBar.js"></script>
+  </body>
+</html>
