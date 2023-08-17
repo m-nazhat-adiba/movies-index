@@ -4,58 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home|Moviever</title>
-    <style>
-      @media only screen and (min-width: 320px) {
-        .carouselText {
-          width: 100%;
-        }
-        .carousel-inner {
-          height: 100vh;
-        }
-        .carousel-sub {
-          min-height: 100vh;
-        }
-        .c-title {
-          width: 80%;
-        }
-        .vignette {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          box-shadow: 0 0 2000px 20px rgba(0, 0, 0, 1) inset;
-        }
-        .w-nav {
-          width: auto;
-        }
-      }
-      @media only screen and (min-width: 769px) {
-        .carouselText {
-          width: 50%;
-        }
-        .carousel-inner {
-          height: 75vh;
-        }
-        .carousel-sub {
-          min-height: 75vh;
-        }
-        .c-title {
-          width: 30%;
-        }
-        .vignette {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          box-shadow: 0 0 2000px 180px rgba(0, 0, 0, 1) inset;
-        }
-        .w-nav {
-          width: 100%;
-        }
-      }
-    </style>
+    <style></style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -272,13 +221,15 @@
             >
               New Arrival
             </h4>
-            <button
-              type="button"
-              class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
-              style="background: none"
-            >
-              See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
-            </button>
+            <a href="new-arrival.html">
+              <button
+                type="button"
+                class="btn btn-dark text-white border-0 d-flex flex-row align-items-center"
+                style="background: none"
+              >
+                See more <i class="bi bi-chevron-right ps-2 iconDark"></i>
+              </button>
+            </a>
           </div>
           <div class="position-relative w-100 py-4">
             <div class="swiper mySwiper container w-100">
@@ -293,8 +244,15 @@
                 </a>
                 <a class="swiper-slide col-xl-2">
                   <movie-card
-                    poster="src/autopsy-poster.jpg"
-                    movieTitle="The Autopsy of Jane Doe"
+                    poster="src/Conjuring2-poster.jpg"
+                    movieTitle="The Conjuring 2"
+                    year="2016"
+                  ></movie-card>
+                </a>
+                <a class="swiper-slide col-xl-2">
+                  <movie-card
+                    poster="src/hereditary-poster.jpg"
+                    movieTitle="Hereditary"
                     year="2016"
                   ></movie-card>
                 </a>
@@ -314,15 +272,8 @@
                 </a>
                 <a class="swiper-slide col-xl-2">
                   <movie-card
-                    poster="src/Conjuring2-poster.jpg"
-                    movieTitle="The Conjuring 2"
-                    year="2016"
-                  ></movie-card>
-                </a>
-                <a class="swiper-slide col-xl-2">
-                  <movie-card
-                    poster="src/hereditary-poster.jpg"
-                    movieTitle="Hereditary"
+                    poster="src/autopsy-poster.jpg"
+                    movieTitle="The Autopsy of Jane Doe"
                     year="2016"
                   ></movie-card>
                 </a>
@@ -674,42 +625,42 @@
                 <rank-card
                   thumbnail="src/interstellar-poster.jpeg"
                   movieTitle="Interstellar"
+                  subText="Sci-Fi"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   movieTitle="Hereditary"
                   thumbnail="src/hereditary-poster.jpg"
+                  subText="Horror"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/aquietplace-poster.jpg"
                   movieTitle="A Quiet Place 2"
+                  subText="Horror"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/conjuring-poster.jpg"
                   movieTitle="The Conjuring"
+                  subText="Horror"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/hungegames-poster.jpg"
                   movieTitle="Hunger Games"
+                  subText="Sci-Fi"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/inceptio-poster.jpg"
                   movieTitle="Inception"
-                ></rank-card>
-              </li>
-              <li style="width: 100%; list-style-position: inside">
-                <rank-card
-                  thumbnail="src/insidious-posterr.jpg"
-                  movieTitle="Insidious"
+                  subText="Sci-Fi"
                 ></rank-card>
               </li>
             </ol>
@@ -742,74 +693,68 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/mathew.jpg"
+                name="Mathew McConaughey"
+              ></cast-card>
+            </div>
+            <div class="swiper-slide">
+              <cast-card avatar="src/anne.jpg" name="Anne Hathaway"></cast-card>
+            </div>
+            <div class="swiper-slide">
+              <cast-card
+                avatar="src/leonardo.jpg"
+                name="Leonardo DiCaprio"
+              ></cast-card>
+            </div>
+            <div class="swiper-slide">
+              <cast-card avatar="src/emma.jpg" name="Emma Watson"></cast-card>
+            </div>
+            <div class="swiper-slide">
+              <cast-card
+                avatar="src/daniel.jpg"
+                name="Daniel Radcliffe"
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
             <div class="swiper-slide">
               <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
-              ></cast-card>
-            </div>
-            <div class="swiper-slide">
-              <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
-              ></cast-card>
-            </div>
-            <div class="swiper-slide">
-              <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
-              ></cast-card>
-            </div>
-            <div class="swiper-slide">
-              <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
-              ></cast-card>
-            </div>
-            <div class="swiper-slide">
-              <cast-card
-                avatar="/src/IMG-20211205-WA0038 (2).png"
-                name="Nazhat Adiba"
+                avatar="src/robert.jpg"
+                name="Robert Downey Jr."
               ></cast-card>
             </div>
           </div>
@@ -853,17 +798,17 @@
             </div>
             <div class="swiper-slide col-xl-4">
               <video-card
-                thumbnail="https://i.ytimg.com/vi/zSWdZVtXT7E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW9ec-FT_xRIAgRjaBHLnCsIJ5FQ"
+                thumbnail="src/HP.jpg"
+                movieTitle="Harry Potter and The Deathly Hallows"
                 len="2:26"
-                movieTitle="Interstellar"
                 date="AUG 16"
               ></video-card>
             </div>
             <div class="swiper-slide col-xl-4">
               <video-card
-                thumbnail="https://i.ytimg.com/vi/zSWdZVtXT7E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW9ec-FT_xRIAgRjaBHLnCsIJ5FQ"
+                thumbnail="src/oppenheimer.jpg"
                 len="2:26"
-                movieTitle="Interstellar"
+                movieTitle="Mission Impossible"
                 date="AUG 16"
               ></video-card>
             </div>
@@ -936,7 +881,7 @@
           <div class="swiper newsSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <img class="w-100" src="src/twilight.webp" />
                 <h3 class="text-white pt-4 pb-1">
                   2023 Emmy Awards Officially Move to January 2024
                 </h3>
@@ -948,7 +893,7 @@
                 </p>
               </div>
               <div class="swiper-slide">
-                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <img class="w-100" src="src/twilight.webp" />
                 <h3 class="text-white pt-4 pb-1">
                   2023 Emmy Awards Officially Move to January 2024
                 </h3>
@@ -960,7 +905,7 @@
                 </p>
               </div>
               <div class="swiper-slide">
-                <img class="w-100" src="src/interstellar_banner.jpg" />
+                <img class="w-100" src="src/twilight.webp" />
                 <h3 class="text-white pt-4 pb-1">
                   2023 Emmy Awards Officially Move to January 2024
                 </h3>
@@ -992,25 +937,29 @@
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/interstellar-poster.jpeg"
-                  movieTitle="Interstellar"
+                  movieTitle="linda Haynes, Brubaker Actress, Dies at 75"
+                  subText="Aug 12, Hollywood Reporter"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
-                  movieTitle="Hereditary"
+                  movieTitle="Greta Gerwig Breaks Global & US Awards"
                   thumbnail="src/hereditary-poster.jpg"
+                  subText="Aug 12, Hollywood Reporter"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/aquietplace-poster.jpg"
-                  movieTitle="A Quiet Place 2"
+                  movieTitle="Box Office: A Quiet Place 2, Gain $2.6 Million"
+                  subText="Aug 12, Hollywood Reporter"
                 ></rank-card>
               </li>
               <li style="width: 100%; list-style-position: inside">
                 <rank-card
                   thumbnail="src/conjuring-poster.jpg"
-                  movieTitle="The Conjuring"
+                  movieTitle="The Rise of The Conjuring"
+                  subText="Aug 12, Hollywood Reporter"
                 ></rank-card>
               </li>
             </ol>
@@ -1034,7 +983,7 @@
           <div class="d-flex flex-column justify-content-between">
             <div class="d-flex align-items-center justify-content-end">
               <img
-                src="/src/logo.png"
+                src="src/logo.png"
                 alt="Logo"
                 width="30"
                 height="30"
@@ -1147,18 +1096,18 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="temporaryAlert.js"></script>
-    <script src="hyperlink.js"></script>
-    <script src="movieCard.js"></script>
-    <script src="navBar.js"></script>
-    <script src="videoCard.js"></script>
-    <script src="castCard.js"></script>
-    <script src="rankCard.js"></script>
+    <script src="script/temporaryAlert.js"></script>
+    <script src="script/hyperlink.js"></script>
+    <script src="components/MovieCard.js"></script>
+    <script src="components/NavBar.js"></script>
+    <script src="components/VideoCard.js"></script>
+    <script src="components/CastCard.js"></script>
+    <script src="components/RankCard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="swiperCarousel.js"></script>
-    <script src="swiperCarousel2.js"></script>
-    <script src="comingSoonCarousel.js"></script>
-    <script src="castSwiper.js"></script>
-    <script src="newsCarousel.js"></script>
+    <script src="script/swiperCarousel.js"></script>
+    <script src="script/swiperCarousel2.js"></script>
+    <script src="script/comingSoonCarousel.js"></script>
+    <script src="script/castSwiper.js"></script>
+    <script src="script/newsCarousel.js"></script>
   </body>
 </html>
