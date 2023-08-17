@@ -20,7 +20,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.c
     <div class="col-md-1 col-sm-1 col-xs-1"></div>
     <div class="col-md-9 col-sm-9 col-xs-9">
         <h5 class="card-title"></h5>
-        <p class="card-text">Genre</p>
+        <p class="card-text"></p>
       </div>
     </div>
   </div>
@@ -35,6 +35,7 @@ class rankCard extends HTMLElement {
     this.shadowRoot.querySelector("img").src = this.getAttribute("thumbnail");
     this.shadowRoot.querySelector(".card-title").innerText =
       this.getAttribute("movieTitle");
+    this.shadowRoot.querySelector("p").innerText = this.getAttribute("subText");
   }
 
   connectedCallback() {

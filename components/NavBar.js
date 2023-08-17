@@ -48,7 +48,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.c
         <div class="container mx-auto">
           <div class="align-items-center flex-grow-1 w-nav">
             <img
-              src="/src/logo.png"
+              src="src/logo.png"
               alt="Logo"
               width="30"
               height="24"
@@ -68,7 +68,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.c
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse pt-2" id="navbarNavAltMarkup">
-            <form class="d-flex flex-row" role="search">
+            <form class="d-flex flex-row" style="min-width: 250px" role="search">
               <div class="input-group">
                 <input
                   class="form-control border rounded-pill bg-transparent"
@@ -86,19 +86,19 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.c
                 </span>
               </div>
             </form>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 ps-4">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a class="nav-link d-flex justify-content-center" aria-current="page" href="index.html"
                   ><i class="bi bi-house iconDark"></i
                 ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#"
+                <a class="nav-link d-flex justify-content-center" href="#"
                   ><i class="bi bi-fire iconDark"></i
                 ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile.html">
+                <a class="nav-link d-flex justify-content-center" href="profile.html">
                   <i class="bi bi-person iconDark"></i>
                 </a>
               </li>
