@@ -257,3 +257,53 @@ input.transparent-input {
 .breadcrumb-item + .breadcrumb-item::before {
   color: white;
 }
+@media only screen and (min-width: 320px) {
+  .carouselText {
+    width: 100%;
+  }
+  .carousel-inner {
+    height: 100vh;
+  }
+  .carousel-sub {
+    min-height: 100vh;
+  }
+  .c-title {
+    width: 80%;
+  }
+  .vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2000px 20px rgba(0, 0, 0, 1) inset;
+  }
+  .w-nav {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .carouselText {
+    width: 50%;
+  }
+  .carousel-inner {
+    height: 75vh;
+  }
+  .carousel-sub {
+    min-height: 75vh;
+  }
+  .c-title {
+    width: 30%;
+  }
+  .vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2000px 180px rgba(0, 0, 0, 1) inset;
+  }
+  .w-nav {
+    width: 100%;
+  }
+}
